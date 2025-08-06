@@ -1,3 +1,3 @@
-module github.com/Craankism/sorter
+module sorter
 
 go 1.24.5
