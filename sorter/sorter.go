@@ -1,6 +1,10 @@
 package sorter
 
-func BubbleSort(sorter []string) {
+import (
+	"fmt"
+)
+
+func BubbleSort(sorter []string, debug bool){
 	n := len(sorter)
 	for i := 0; i < n-1; i++ {
 		swapped := false
@@ -8,6 +12,9 @@ func BubbleSort(sorter []string) {
 			if sorter[j] > sorter[j+1] {
 				sorter[j], sorter[j+1] = sorter[j+1], sorter[j]
 				swapped = true
+				if debug {
+					fmt.Printf("Swapped %s and %s\n", sorter[j], sorter[j+1])
+				}
 			}
 		}
 		if !swapped {
@@ -15,7 +22,7 @@ func BubbleSort(sorter []string) {
 		}
 	}
 }
-func BubbleSortDesc(sorter []string) {
+func BubbleSortDesc(sorter []string, debug bool) {
 	n := len(sorter)
 	for i := 0; i < n-1; i++ {
 		swapped := false
@@ -23,6 +30,9 @@ func BubbleSortDesc(sorter []string) {
 			if sorter[j] < sorter[j+1] {
 				sorter[j], sorter[j+1] = sorter[j+1], sorter[j]
 				swapped = true
+				if debug {
+					fmt.Printf("Swapped %s and %s\n", sorter[j], sorter[j+1])
+				}
 			}
 		}
 		if !swapped {
