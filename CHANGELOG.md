@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/Craankism/sorter/compare/v1.0.2...v1.0.3) (2025-08-09)
+
+
+### Bug Fixes
+
+* add artifact for windows ([a88f631](https://github.com/Craankism/sorter/commit/a88f6318c3c5f01cb90a8340166c11ae2bd41b0b))
+
 ## [1.0.2](https://github.com/Craankism/sorter/compare/v1.0.1...v1.0.2) (2025-08-09)
 
 
