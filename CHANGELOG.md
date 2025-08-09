@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/Craankism/sorter/compare/v1.0.0...v1.0.1) (2025-08-09)
+
+
+### Bug Fixes
+
+* change workflow to combine release-please with gh actions ([7120281](https://github.com/Craankism/sorter/commit/712028197e13f3bb89610de262b40758aa466302))
+
 ## 1.0.0 (2025-08-09)
 
 
