@@ -41,7 +41,7 @@ jobs:
       - name: Build sorter
         run: |
           mkdir -p dist
-          # Build for Linux
+          # Build for Linux(default)
           go build -o dist/sorter ./main.go
           # Build for Windows
           GOOS=windows GOARCH=amd64 go build -o dist/sorter.exe ./main.go
