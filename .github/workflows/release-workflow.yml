@@ -41,7 +41,7 @@ jobs:
       - name: Build sorter
         run: |
           mkdir -p dist
-          # Build for Linux (default)
+          # Build for Linux
           go build -o dist/sorter ./main.go
           # Build for Windows
           GOOS=windows GOARCH=amd64 go build -o dist/sorter.exe ./main.go
@@ -52,4 +52,3 @@ jobs:
         run: |
           gh release upload ${{ needs.release-please.outputs.tag_name }} dist/sorter
           gh release upload ${{ needs.release-please.outputs.tag_name }} dist/sorter.exe
-
