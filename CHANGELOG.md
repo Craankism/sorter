@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/Craankism/sorter/compare/v1.0.1...v1.0.2) (2025-08-09)
+
+
+### Bug Fixes
+
+* add github token for cli ([e428d41](https://github.com/Craankism/sorter/commit/e428d41bf86a8ad11438f536d895232580f87bf5))
+
 ## [1.0.1](https://github.com/Craankism/sorter/compare/v1.0.0...v1.0.1) (2025-08-09)
 
 
