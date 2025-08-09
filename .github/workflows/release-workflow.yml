@@ -41,11 +41,15 @@ jobs:
       - name: Build sorter
         run: |
           mkdir -p dist
+          # Build for Linux (default)
           go build -o dist/sorter ./main.go
+          # Build for Windows
+          GOOS=windows GOARCH=amd64 go build -o dist/sorter.exe ./main.go
 
       - name: Upload Release Artifact
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
         run: |
           gh release upload ${{ needs.release-please.outputs.tag_name }} dist/sorter
+          gh release upload ${{ needs.release-please.outputs.tag_name }} dist/sorter.exe
 
